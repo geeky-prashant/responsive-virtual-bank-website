@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section  */
+.navbar {
+  background: #131313;
+  padding: 15px 125px !important;
+  z-index: 100;
+}
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 14px;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #00bf85;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a.active {
+  color: #00bf7f;
+}
+#navbarSupportedContent > button {
+  background: #00bf85;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 30px;
+}
+
+/* Hero Section  */
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mid .hero {
+  position: relative;
+}
+.mid .hero p {
+  width: 55%;
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+.mid .hero a {
+  background: #00bf85;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.mid .hero a:hover {
+  background-color: #fff;
+}
+
+/* About Section  */
+.about {
+  background: #000;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.about .text h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.about .text h2 {
+  color: #f7f5f4;
+  font-weight: 700;
+  font-size: 45px;
+}
+.about .text p {
+  color: #f7f5f4;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.about .text a {
+  background: #00fb85;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Discover Section  */
+.discover {
+  background: #fff;
+}
+.discover .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.discover .text h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.discover .text h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.discover .text p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.discover .text a {
+  background: #111;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Service Section  */
+.service {
+  background: #000;
+}
+.service .card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px 24px;
+  border-radius: 10px;
+}
+
+/* Sign Up Section  */
+.signup {
+  background: #fff;
+}
+.signup .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.signup .text h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.signup .text h2 {
+  color: #111;
+  font-weight: 700;
+  font-size: 45px;
+}
+.signup .text p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.signup .text a {
+  background: #111;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive with Media Screen  */
+@media screen and (max-width: 988px) {
+  /* Navbar Section  */
+  .navbar {
+    padding: 15px !important;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 12px;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 12px 0;
+  }
+  /* Hero Section  */
+  .mid {
+    padding-top: 60px;
+  }
+  .mid .hero p {
+    width: 85%;
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+
+  /* About Section  */
+  .about .text h6 {
+    font-size: 14px;
+  }
+  .about .text h2 {
+    font-size: 25px;
+  }
+  .about .text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  /* Discover Section  */
+  .discover .text h6 {
+    font-size: 14px;
+  }
+  .discover .text h2 {
+    font-size: 25px;
+  }
+  .discover .text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  /* Sign Up Section  */
+  .signup .text h6 {
+    font-size: 14px;
+  }
+  .signup .text h2 {
+    font-size: 25px;
+  }
+  .signup .text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
